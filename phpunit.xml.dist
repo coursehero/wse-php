@@ -26,6 +26,21 @@
          strict="false"
          verbose="false">
 
+    <testsuites>
+        <testsuite name="Test Suite">
+            <directory>.</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">.</directory>
+            <exclude>
+                <directory>./vendor</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+
     <logging>
         <log type="coverage-html" target="./docs/coverage" chartset="UTF-8" />
         <log type="coverage-clover" target="./docs/coverage/clover.xml"/>
