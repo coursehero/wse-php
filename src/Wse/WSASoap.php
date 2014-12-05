@@ -1,4 +1,7 @@
 <?php 
+
+namespace Wse;
+
 /** 
  * soap-wsa.php 
  * 
@@ -149,4 +152,3 @@ class WSASoap {
         return $this->soapDoc->save($file); 
     } 
 } 
-

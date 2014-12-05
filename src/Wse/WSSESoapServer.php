@@ -1,4 +1,7 @@
 <?php  
+
+namespace Wse;
+
 /** 
  * soap-server-wsse.php 
  * 
@@ -183,4 +186,3 @@ class WSSESoapServer {
         return $this->soapDoc->save($file); 
     } 
 } 
-

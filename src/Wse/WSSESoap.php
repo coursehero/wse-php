@@ -1,4 +1,7 @@
 <?php  
+
+namespace Wse;
+
 /** 
  * soap-wsse.php 
  * 
@@ -39,7 +42,7 @@
  * @license    http://www.opensource.org/licenses/bsd-license.php  BSD License 
  * @version    1.1.0-dev 
  */ 
-  
+
 class WSSESoap { 
     const WSSENS = 'http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd'; 
     const WSUNS = 'http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd'; 
@@ -488,4 +491,3 @@ class WSSESoap {
         return $this->soapDoc->save($file); 
     } 
 } 
-

@@ -22,11 +22,8 @@
         "php": ">= 5.2.3"
     },
     "autoload": {
-        "files": [
-            "soap-server-wsse.php",
-            "soap-wsa.php",
-            "soap-wsse.php",
-            "xmlseclibs.php"
-        ]
+        "psr-0": {
+            "Wse": "src"
+        }
     }
 }
