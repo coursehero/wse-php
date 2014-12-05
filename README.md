@@ -7,7 +7,7 @@ What is wse-php?
 *wse-php* is a library written by Rob Richards that adds ```WS-*```
 support to ext/soap in PHP.
 
-[![Build Status](https://travis-ci.org/course-hero/symfony-cron-bundle.svg)](https://travis-ci.org/course-hero/symfony-cron-bundle) [![Coverage Status](https://img.shields.io/coveralls/course-hero/symfony-cron-bundle.svg)](https://coveralls.io/r/course-hero/symfony-cron-bundle)
+[![Build Status](https://travis-ci.org/course-hero/wse-php.svg)](https://travis-ci.org/course-hero/wse-php) [![Coverage Status](https://img.shields.io/coveralls/course-hero/wse-php.svg)](https://coveralls.io/r/course-hero/wse-php)
 
 Requirements
 ------------
