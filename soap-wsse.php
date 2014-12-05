@@ -40,8 +40,6 @@
  * @version    1.1.0-dev 
  */ 
   
-require('xmlseclibs.php'); 
-
 class WSSESoap { 
     const WSSENS = 'http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd'; 
     const WSUNS = 'http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd'; 
