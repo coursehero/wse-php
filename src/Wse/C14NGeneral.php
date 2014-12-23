@@ -3,6 +3,7 @@
 namespace Wse;
 
 use \DOMDocument;
+use \DOMElement;
 use \DOMXPath;
 use \Exception;
 

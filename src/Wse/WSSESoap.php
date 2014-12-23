@@ -2,6 +2,7 @@
 
 namespace Wse;
 
+use \DOMElement;
 use \DOMText;
 use \DOMXPath;
 use \Exception;
