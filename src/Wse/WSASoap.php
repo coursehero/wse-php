@@ -2,6 +2,8 @@
 
 namespace Wse;
 
+use \DOMXPath;
+
 /** 
  * soap-wsa.php 
  * 

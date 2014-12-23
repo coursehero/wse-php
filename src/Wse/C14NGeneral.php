@@ -2,6 +2,10 @@
 
 namespace Wse;
 
+use \DOMDocument;
+use \DOMXPath;
+use \Exception;
+
 /**
  * xmlseclibs.php
  *

@@ -2,6 +2,8 @@
 
 namespace Wse;
 
+use \Exception;
+
 /**
  * xmlseclibs.php
  *

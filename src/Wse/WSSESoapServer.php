@@ -2,6 +2,9 @@
 
 namespace Wse;
 
+use \DOMXPath;
+use \Exception;
+
 /** 
  * soap-server-wsse.php 
  * 
