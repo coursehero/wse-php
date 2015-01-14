@@ -54,14 +54,14 @@ class WSSESoap {
     const WSUNAME = 'http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0'; 
     const WSSEPFX = 'wsse'; 
     const WSUPFX = 'wsu'; 
-    private $soapNS, $soapPFX; 
-    private $soapDoc = NULL; 
-    private $envelope = NULL; 
-    private $SOAPXPath = NULL; 
-    private $secNode = NULL; 
-    public $signAllHeaders = FALSE; 
+    protected $soapNS, $soapPFX;
+    protected $soapDoc = NULL;
+    protected $envelope = NULL;
+    protected $SOAPXPath = NULL;
+    protected $secNode = NULL;
+    public $signAllHeaders = FALSE;
      
-    private function locateSecurityHeader($bMustUnderstand = TRUE, $setActor = NULL) { 
+    protected function locateSecurityHeader($bMustUnderstand = TRUE, $setActor = NULL) {
         if ($this->secNode == NULL) { 
             $headers = $this->SOAPXPath->query('//wssoap:Envelope/wssoap:Header'); 
             $header = $headers->item(0); 
