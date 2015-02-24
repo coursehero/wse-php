@@ -193,6 +193,7 @@ class WSSESoap {
             $tokenRef = $this->soapDoc->createElementNS(WSSESoap::WSSENS, WSSESoap::WSSEPFX.':SecurityTokenReference'); 
             $keyInfo->appendChild($tokenRef); 
             $reference = $this->soapDoc->createElementNS(WSSESoap::WSSENS, WSSESoap::WSSEPFX.':Reference'); 
+            $reference->setAttribute('ValueType', $token->getAttribute('ValueType'));
             $reference->setAttribute("URI", $tokenURI); 
             $tokenRef->appendChild($reference); 
         } else { 
