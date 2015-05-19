@@ -261,7 +261,7 @@ class WSSESoap {
                     $tokenRef->appendChild($reference);
 					$x509 = openssl_x509_parse($objKey->getX509Certificate());
 					$keyid = $x509["extensions"]["subjectKeyIdentifier"];
-					$arkeyid = split(":", $keyid);
+					$arkeyid = explode(":", $keyid);
 					$data = "";
 					foreach ($arkeyid AS $hexchar) {
 					    $data .= chr(hexdec($hexchar));
@@ -325,7 +325,7 @@ class WSSESoap {
 				    $tokenRef->appendChild($reference);
 					$x509 = openssl_x509_parse($token->getX509Certificate());
 					$keyid = $x509["extensions"]["subjectKeyIdentifier"];
-					$arkeyid = split(":", $keyid);
+					$arkeyid = explode(":", $keyid);
 					$data = "";
 					foreach ($arkeyid AS $hexchar) {
 					    $data .= chr(hexdec($hexchar));
